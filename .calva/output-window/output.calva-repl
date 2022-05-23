@@ -1,0 +1,47 @@
+(use 'hospital.aula6)
+nil
+clj꞉hospital.aula6꞉> 
+futures
+; Error printing return value (ExceptionInfo) at hospital.aula6/chega-em (aula6.clj:14).
+; Fila está cheia
+clj꞉hospital.aula6꞉> 
+; Evaluating file: aula6.clj
+#future[{:status :pending, :val nil} 0x309b4c0f]
+clj꞉hospital.aula6꞉> 
+Tentando o codigo sicronizado 0
+Tentando o codigo sicronizado 3
+Tentando o codigo sicronizado 2
+Tentando o codigo sicronizado 7
+Tentando o codigo sicronizado 1
+Tentando o codigo sicronizado 9
+{:espera #<Ref@60529c66: <-(0 3 2 7 1)-<>,
+ :laboratorio1 #<Ref@2db88d13: <-()-<>,
+ :laboratorio2 #<Ref@645490a8: <-()-<>,
+ :laboratorio3 #<Ref@1536e992: <-()-<>}
+[#<Future@5c1f81b8: <-(0)-<>
+ #<Future@273b725b: <-(0 3 2 7 1)-<>
+ #<Future@7093545: <-(0 3 2)-<>
+ #<Future@1d9f542d: <-(0 3)-<>
+ #<Future@662f5f5d: :pending>
+ #<Future@517340c3: :pending>
+ #<Future@1d45234d: :pending>
+ #<Future@6e9d4c7b: <-(0 3 2 7)-<>
+ Tentando o codigo sicronizado 8
+Tentando o codigo sicronizado 4
+Tentando o codigo sicronizado 5
+Tentando o codigo sicronizado 6
+(use 'hospital.aula6)
+nil
+clj꞉hospital.aula6꞉> 
+futures
+; Error printing return value (ExceptionInfo) at hospital.aula6/chega-em (aula6.clj:14).
+; Fila está cheia
+clj꞉hospital.aula6꞉> 
+(:use 'hospital.aula6)
+nil
+clj꞉hospital.aula6꞉> 
+futures
+; Error printing return value (ExceptionInfo) at hospital.aula6/chega-em (aula6.clj:14).
+; Fila está cheia
+clj꞉hospital.aula6꞉> 
+; nREPL Connection was closed
